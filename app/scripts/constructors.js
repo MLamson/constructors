@@ -51,6 +51,7 @@ var Dog = function Dog(options){
 }
 
 var Human = function Human(options){
+  var options = options || {};
   this.cool = options.cool || false;
   this.pet = function(dog){
     dog.status = 'happy';
